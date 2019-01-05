@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Netflix Bit Rate menu",
+  "description": "Brings back bit rate selector that netflix recently removed.",
+  "version": "1.0",
+  "author": "tushar9989",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    "cadmium-playercore-6.0011.853.011-modded.js"
+  ],
+  "permissions": [
+	"webRequest",
+    "webRequestBlocking",
+    "*://assets.nflxext.com/*/ffe/player/html/*",
+    "*://www.assets.nflxext.com/*/ffe/player/html/*",
+    "*://netflix.com/*",
+    "*://www.netflix.com/*"
+  ]
+}
